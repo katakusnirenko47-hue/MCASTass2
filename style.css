@@ -177,6 +177,23 @@ p {
 
 
 /* background utilities */
+
+.contact-page {
+    background-image: url(assets/backgroun-contact.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.page-wrapper {
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
 .bg-dark {
     background: var(--navy);
 }
@@ -205,21 +222,21 @@ p {
 /* TOPBAR */
 .topbar {
     background: var(--navy);
+    padding: 1rem 2rem;
 }
 
 .topbar-inner {
     height: 64px;
 }
 
-.header-logo{
+.header-logo {
     height: 60px;
     width: auto;
-    max-width: none;  
+    max-width: none;
 }
 
 
-.nav-link 
-.nav-link:visited {
+.nav-link .nav-link:visited {
     color: var(--white);
     text-decoration: none;
     font-size: 14px;
@@ -319,21 +336,6 @@ p {
     opacity: 1;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
-@media (max-width: 760px) {
-    .page-title {
-        font-size: 34px;
-    }
-
-    .hero img {
-        height: 260px;
-    }
-
-    .sm-grid-1col {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* ---------------- HOVER LINKS ---------------- */
 a:visited {
     color: #ffffff;
@@ -366,4 +368,132 @@ a:hover {
 /* ensure no gaps */
 .hero .mission {
     margin: 0;
+}
+
+.apply-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/* ---------------- HOVER LINKS ---------------- */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--muted-shade);
+    border-radius: 0.75rem;
+    font-family: var(--font-normal);
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* COLLEGE CONTACT BOXES */
+.college-card {
+    border: 2px solid var(--muted-shade);
+    border-radius: 1rem;
+    padding: var(--space-2);
+    background-color: var(--light);
+}
+
+.college-card h3 {
+    margin-bottom: var(--space-1);
+}
+
+.campus-card {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 1rem;
+
+    background-color: #f4f6f8;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    border-radius: 8px;
+    align-items: center;
+}
+
+.apply-online {
+    min-height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------- CHAT BOT ---------------- */
+.chatbot {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.chat-window {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.chatbot input {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ---------------- APPLY ONLINE ICONS---------------- */
+
+.icons img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.apply-docs-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+/*--- IMG APPLY ONLINE-----*/
+.contact-img {
+    width: 500px;
+    height: 250px;
+    
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 760px) {
+    .page-title {
+        font-size: 34px;
+    }
+
+    .hero img {
+        height: 260px;
+    }
+
+    .sm-grid-1col {
+        grid-template-columns: 1fr;
+    }
 }
