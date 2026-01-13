@@ -179,7 +179,7 @@ p {
 /* background utilities */
 
 .contact-page {
-    background-image: url(assets/backgroun-contact.jpeg);
+    background-image: url(assets/background-contact.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -187,7 +187,7 @@ p {
 }
 
 .page-wrapper {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.80);
     max-width: 1100px;
     margin: 4rem auto;
     padding: 2rem;
@@ -480,8 +480,54 @@ a:hover {
 .contact-img {
     width: 500px;
     height: 250px;
-    
+
 }
+
+/* ---------------- APPRENTINSHIP PAGE ---------------- */
+.apprenticeship-content {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+}
+
+.apprenticeship-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 1100px;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 16px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.apprenticeship-image img {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.download-btn:hover {
+    background-color: var(--navy)
+}
+
+.download-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0 auto;
+    padding: 12px 20px;
+    text-align: center;
+    background-color:var(--ink);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 760px) {
